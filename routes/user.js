@@ -4,7 +4,6 @@ const express = require('express');
 const UserModel = require('../model/userModel')
 const path = require('path')
 
-
 //setup of router
 const router = express.Router();
 
@@ -34,13 +33,12 @@ router.post('/installment', async (req, res) => {
       let tuitionPlan = req.body.tuitionPlan
       let feesPaid = parseInt(tuitionPlan) + parseInt(installmentAmount)
       const updateFees = await UserModel.updateOne(
-         {_id:req.body.studentID},
-         {$set: {tuitionPlan:feesPaid}}
-      )
-res.redirect('/allStudents')
+         { _id: req.body.studentID },
+         { $set: { tuitionPlan: feesPaid }
+      })
+      res.redirect('/allStudents')
    } catch (error) {
-      console.log(error);     
-
+      console.log(error);
    }
 })
 
@@ -59,15 +57,12 @@ router.post('/addstudent', async (req, res) => {
       const newStudent = new UserModel(req.body)
       await newStudent.save()
       console.log(req.body);
-
       res.redirect('/allstudents')
    } catch (error) {
       console.log(error);
       res.status(404).send('Student creation failed')
-
    }
-}
-)
+})
 
 router.get('/prompt', (req, res) => {
    res.send('this is a prompt')

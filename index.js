@@ -17,6 +17,7 @@ db.once('open',()=>{console.log('connection to db success')})
 const app = express();
 const PORT = 3200;
 
+app.use(express.static('public'))
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','pug');
 
