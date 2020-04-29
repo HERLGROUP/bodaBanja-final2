@@ -13,12 +13,12 @@ html(lang="en")
     h3  #{x.email}
     h3  #{x.skills}
     h3  #{x.project}
-    h3  #{x.tuitionPlan}
+    h3  #{x.paymentPlan}
     form(action="/installment" method="POST")
-      h4 StudentID
-      input(type="text" name='studentID' value=`${x._id}`)
+      h4 CustomerID
+      input(type="text" name='customerID' value=`${x._id}`)
       br
-      h4 TuitionPlan
+      h4 PaymentPlan
       input(type="text" value=`${x.tuitionPlan}` name="tuitionPlan")
       br
       h4 Balance

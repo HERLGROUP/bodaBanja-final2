@@ -21,7 +21,7 @@ const userSchema = new Schema({
       type: String
    },
    email:{type:String},
-   tuitionPlan:{type:Number}
+   paymentPlan:{type:Number}
    
    // skills:{type:String},
    // project:{type:String}

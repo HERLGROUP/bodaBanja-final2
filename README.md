@@ -1,5 +1,5 @@
-# profileME
-Sample app to create student profiles
+# BodaBanja
+Sample boda loan scheme app
 
 ## Project setup
 ```

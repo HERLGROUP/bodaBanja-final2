@@ -11,7 +11,7 @@ html(lang='en')
       margin: 0 auto;
       }
   body
-   h3 Student list
+   h3 Customer list
    table
       thead
       tr
@@ -22,14 +22,14 @@ html(lang='en')
        th action
        
       tbody
-       each student in x
+       each customer in x
         tr
-         td #{student.surname}
-         td #{student.givenName}
-         td #{student.gender}
-         td #{student.dob}
+         td #{customer.surname}
+         td #{customer.givenName}
+         td #{customer.gender}
+         td #{customer.dob}
          td
-            a(href=`/student/${student._id}`) view
+            a(href=`/customer/${customer._id}`) view
          
             
                

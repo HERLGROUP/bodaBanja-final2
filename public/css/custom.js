@@ -1,5 +1,5 @@
 
-   alert('The javascript has been separarted');
+   alert('The javascript has been separated');
 
 
 

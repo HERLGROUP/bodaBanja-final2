@@ -1,3 +1,64 @@
 body{
-    background-color: blueviolet;
+    background-color: rgb(226, 245, 245);
+}
+body{
+	background-color: #edf0f5;
+}
+
+.app-nav-bar{
+	background-color: #3b5998;
+	height: auto;
+	border-bottom: 1px #133783 solid;
+	color:white;
+}
+
+
+.logo{
+	font-family: klavika-bold;
+	font-size: xxx-large;
+  }
+  .login{
+	display: flex;
+  }
+  .l-btn{
+	background-color: #4267b2;
+	border: 0px solid black;
+	color: white;
+	margin-top: 2.5rem;
+  }
+  .item1 > input
+  {
+	border: 1px solid black;
+	/* position: fixed; */
+  
+  }
+
+#disclaimer{
+	font-size: 0.8rem;
+}
+
+.promo{
+	margin-top: 2rem;
+}
+
+footer
+{
+	background-color: white;
+	margin-top: 4rem;
+	padding-bottom: 1rem;
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   
+   color: white;
+   
+}
+
+.links > a {
+	margin-right: 0.8rem;
+}
+
+.lang span{
+	margin: 0 0.2rem;
 }
